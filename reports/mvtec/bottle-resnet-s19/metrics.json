@@ -1,0 +1,120 @@
+{
+  "category": "bottle",
+  "source": {
+    "source": "MVTec AD official bottle category",
+    "url": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad/downloads",
+    "license": "CC BY-NC-SA 4.0",
+    "archive_sha256": "726512129cb3b1f47d4f6cd7c7fc9170db7fc209132249c788fec06029cb5dc3"
+  },
+  "seed": 19,
+  "config": {
+    "extractor": "resnet18",
+    "size": 192,
+    "patch": 12,
+    "memory": 256,
+    "seed": 19,
+    "alpha": 0.05,
+    "illumination": false
+  },
+  "split_counts": {
+    "train": 126,
+    "tune": 31,
+    "calibration": 52
+  },
+  "test_count": 83,
+  "shift_count": 0,
+  "fit_seconds": 31.018575399999918,
+  "memory_bytes": 196608,
+  "model_file_bytes": 504578,
+  "environment": {
+    "python": "3.14.5",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.5.3"
+  },
+  "results": {
+    "global": {
+      "tp": 62,
+      "fp": 2,
+      "fn": 1,
+      "tn": 18,
+      "precision": 0.96875,
+      "recall": 0.9841269841269841,
+      "f1": 0.9763779527559056,
+      "fpr": 0.1,
+      "image_auroc": 0.9968253968253968,
+      "pixel_auroc": 0.9815061624862875,
+      "pixel_iou": 0.5144222115017677,
+      "shift_fpr": null,
+      "latency_ms_median": 22.86690000028102,
+      "latency_ms_p95": 55.742290000034686,
+      "per_defect_recall": {
+        "broken_large": 1.0,
+        "broken_small": 1.0,
+        "contamination": 0.9523809523809523
+      }
+    },
+    "spatial": {
+      "tp": 62,
+      "fp": 1,
+      "fn": 1,
+      "tn": 19,
+      "precision": 0.9841269841269841,
+      "recall": 0.9841269841269841,
+      "f1": 0.9841269841269841,
+      "fpr": 0.05,
+      "image_auroc": 0.996031746031746,
+      "pixel_auroc": 0.9839036355624436,
+      "pixel_iou": 0.47632885197030433,
+      "shift_fpr": null,
+      "latency_ms_median": 23.413499999605847,
+      "latency_ms_p95": 61.14239999992605,
+      "per_defect_recall": {
+        "broken_large": 1.0,
+        "broken_small": 1.0,
+        "contamination": 0.9523809523809523
+      }
+    },
+    "fusion": {
+      "tp": 62,
+      "fp": 1,
+      "fn": 1,
+      "tn": 19,
+      "precision": 0.9841269841269841,
+      "recall": 0.9841269841269841,
+      "f1": 0.9841269841269841,
+      "fpr": 0.05,
+      "image_auroc": 0.9968253968253968,
+      "pixel_auroc": 0.9847422472575866,
+      "pixel_iou": 0.46981593586153947,
+      "shift_fpr": null,
+      "latency_ms_median": 22.99689999972543,
+      "latency_ms_p95": 62.52045000010183,
+      "per_defect_recall": {
+        "broken_large": 1.0,
+        "broken_small": 1.0,
+        "contamination": 0.9523809523809523
+      }
+    },
+    "gated": {
+      "tp": 62,
+      "fp": 1,
+      "fn": 1,
+      "tn": 19,
+      "precision": 0.9841269841269841,
+      "recall": 0.9841269841269841,
+      "f1": 0.9841269841269841,
+      "fpr": 0.05,
+      "image_auroc": 0.9968253968253968,
+      "pixel_auroc": 0.9844094187798785,
+      "pixel_iou": 0.4766659122694011,
+      "shift_fpr": null,
+      "latency_ms_median": 24.071200000435056,
+      "latency_ms_p95": 63.20953999997982,
+      "per_defect_recall": {
+        "broken_large": 1.0,
+        "broken_small": 1.0,
+        "contamination": 0.9523809523809523
+      }
+    }
+  }
+}

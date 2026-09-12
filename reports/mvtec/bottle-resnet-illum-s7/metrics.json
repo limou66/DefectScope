@@ -1,0 +1,120 @@
+{
+  "category": "bottle",
+  "source": {
+    "source": "MVTec AD official bottle category",
+    "url": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad/downloads",
+    "license": "CC BY-NC-SA 4.0",
+    "archive_sha256": "726512129cb3b1f47d4f6cd7c7fc9170db7fc209132249c788fec06029cb5dc3"
+  },
+  "seed": 7,
+  "config": {
+    "extractor": "resnet18",
+    "size": 192,
+    "patch": 12,
+    "memory": 256,
+    "seed": 7,
+    "alpha": 0.05,
+    "illumination": true
+  },
+  "split_counts": {
+    "train": 126,
+    "tune": 31,
+    "calibration": 52
+  },
+  "test_count": 83,
+  "shift_count": 0,
+  "fit_seconds": 10.781648199999836,
+  "memory_bytes": 196608,
+  "model_file_bytes": 503587,
+  "environment": {
+    "python": "3.14.5",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.5.3"
+  },
+  "results": {
+    "global": {
+      "tp": 61,
+      "fp": 1,
+      "fn": 2,
+      "tn": 19,
+      "precision": 0.9838709677419355,
+      "recall": 0.9682539682539683,
+      "f1": 0.976,
+      "fpr": 0.05,
+      "image_auroc": 0.9952380952380953,
+      "pixel_auroc": 0.9798498583080925,
+      "pixel_iou": 0.5056425152711889,
+      "shift_fpr": null,
+      "latency_ms_median": 45.81430000007458,
+      "latency_ms_p95": 73.11151999979302,
+      "per_defect_recall": {
+        "broken_large": 1.0,
+        "broken_small": 1.0,
+        "contamination": 0.9047619047619048
+      }
+    },
+    "spatial": {
+      "tp": 62,
+      "fp": 1,
+      "fn": 1,
+      "tn": 19,
+      "precision": 0.9841269841269841,
+      "recall": 0.9841269841269841,
+      "f1": 0.9841269841269841,
+      "fpr": 0.05,
+      "image_auroc": 0.996031746031746,
+      "pixel_auroc": 0.9842064915328445,
+      "pixel_iou": 0.4846889231922599,
+      "shift_fpr": null,
+      "latency_ms_median": 48.5156999998253,
+      "latency_ms_p95": 77.83044999991942,
+      "per_defect_recall": {
+        "broken_large": 1.0,
+        "broken_small": 1.0,
+        "contamination": 0.9523809523809523
+      }
+    },
+    "fusion": {
+      "tp": 62,
+      "fp": 1,
+      "fn": 1,
+      "tn": 19,
+      "precision": 0.9841269841269841,
+      "recall": 0.9841269841269841,
+      "f1": 0.9841269841269841,
+      "fpr": 0.05,
+      "image_auroc": 0.9968253968253968,
+      "pixel_auroc": 0.9847660305888452,
+      "pixel_iou": 0.47998020292006927,
+      "shift_fpr": null,
+      "latency_ms_median": 42.65220000024783,
+      "latency_ms_p95": 73.85795999994116,
+      "per_defect_recall": {
+        "broken_large": 1.0,
+        "broken_small": 1.0,
+        "contamination": 0.9523809523809523
+      }
+    },
+    "gated": {
+      "tp": 61,
+      "fp": 1,
+      "fn": 2,
+      "tn": 19,
+      "precision": 0.9838709677419355,
+      "recall": 0.9682539682539683,
+      "f1": 0.976,
+      "fpr": 0.05,
+      "image_auroc": 0.9968253968253968,
+      "pixel_auroc": 0.9843365441385798,
+      "pixel_iou": 0.4768973016605836,
+      "shift_fpr": null,
+      "latency_ms_median": 42.21189999998387,
+      "latency_ms_p95": 72.93314999983522,
+      "per_defect_recall": {
+        "broken_large": 1.0,
+        "broken_small": 1.0,
+        "contamination": 0.9047619047619048
+      }
+    }
+  }
+}

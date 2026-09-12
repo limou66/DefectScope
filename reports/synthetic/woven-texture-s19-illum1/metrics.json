@@ -1,0 +1,135 @@
+{
+  "category": "woven",
+  "source": {
+    "source": "procedural synthetic v1",
+    "seed": 19,
+    "categories": [
+      "woven",
+      "brushed",
+      "board"
+    ],
+    "normal_counts": {
+      "train": 64,
+      "tune": 24,
+      "calibration": 39,
+      "test": 24,
+      "shift": 24
+    },
+    "defects_per_type": 12
+  },
+  "seed": 19,
+  "config": {
+    "extractor": "texture",
+    "size": 96,
+    "patch": 6,
+    "memory": 128,
+    "seed": 19,
+    "alpha": 0.05,
+    "illumination": true
+  },
+  "split_counts": {
+    "train": 64,
+    "tune": 24,
+    "calibration": 39
+  },
+  "test_count": 72,
+  "shift_count": 24,
+  "fit_seconds": 0.5497715000001335,
+  "memory_bytes": 7168,
+  "model_file_bytes": 52664,
+  "environment": {
+    "python": "3.14.5",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.5.3"
+  },
+  "results": {
+    "global": {
+      "tp": 40,
+      "fp": 3,
+      "fn": 8,
+      "tn": 21,
+      "precision": 0.9302325581395349,
+      "recall": 0.8333333333333334,
+      "f1": 0.8791208791208791,
+      "fpr": 0.125,
+      "image_auroc": 0.8914930555555556,
+      "pixel_auroc": 0.9150238400113749,
+      "pixel_iou": 0.133114422834049,
+      "shift_fpr": 1.0,
+      "latency_ms_median": 3.787150000107431,
+      "latency_ms_p95": 4.038650000074995,
+      "per_defect_recall": {
+        "hole": 1.0,
+        "scratch": 1.0,
+        "stain": 1.0,
+        "swap": 0.3333333333333333
+      }
+    },
+    "spatial": {
+      "tp": 47,
+      "fp": 2,
+      "fn": 1,
+      "tn": 22,
+      "precision": 0.9591836734693877,
+      "recall": 0.9791666666666666,
+      "f1": 0.9690721649484536,
+      "fpr": 0.08333333333333333,
+      "image_auroc": 0.9869791666666666,
+      "pixel_auroc": 0.9786554618830472,
+      "pixel_iou": 0.15728990795708295,
+      "shift_fpr": 1.0,
+      "latency_ms_median": 3.9594500001385313,
+      "latency_ms_p95": 6.312845000184102,
+      "per_defect_recall": {
+        "hole": 1.0,
+        "scratch": 1.0,
+        "stain": 1.0,
+        "swap": 0.9166666666666666
+      }
+    },
+    "fusion": {
+      "tp": 46,
+      "fp": 5,
+      "fn": 2,
+      "tn": 19,
+      "precision": 0.9019607843137255,
+      "recall": 0.9583333333333334,
+      "f1": 0.9292929292929293,
+      "fpr": 0.20833333333333334,
+      "image_auroc": 0.9826388888888888,
+      "pixel_auroc": 0.975894332149605,
+      "pixel_iou": 0.1498899024850582,
+      "shift_fpr": 1.0,
+      "latency_ms_median": 4.254799999898751,
+      "latency_ms_p95": 5.4587650002986265,
+      "per_defect_recall": {
+        "hole": 1.0,
+        "scratch": 1.0,
+        "stain": 1.0,
+        "swap": 0.8333333333333334
+      }
+    },
+    "gated": {
+      "tp": 46,
+      "fp": 5,
+      "fn": 2,
+      "tn": 19,
+      "precision": 0.9019607843137255,
+      "recall": 0.9583333333333334,
+      "f1": 0.9292929292929293,
+      "fpr": 0.20833333333333334,
+      "image_auroc": 0.9826388888888888,
+      "pixel_auroc": 0.975894332149605,
+      "pixel_iou": 0.1498899024850582,
+      "shift_fpr": 1.0,
+      "latency_ms_median": 4.031649999888032,
+      "latency_ms_p95": 5.449735000138389,
+      "per_defect_recall": {
+        "hole": 1.0,
+        "scratch": 1.0,
+        "stain": 1.0,
+        "swap": 0.8333333333333334
+      }
+    }
+  }
+}
